@@ -18,7 +18,7 @@ final class Main {
                 });
       }
     } catch (final OutOfMemoryError e) {
-      System.err.printf("Reached thread limit %d\n", threadCount.get());
+      System.err.printf("Reached thread limit: %d\n", threadCount.get());
       e.printStackTrace();
     }
   }
