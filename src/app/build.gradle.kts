@@ -8,8 +8,12 @@ repositories {
     mavenCentral()
 }
 
-dependencies {}
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
 
 application {
-    mainClass = "$group.${rootProject.name}.Main"
+    mainClass = "com.daromi.jtl.ThreadLimitBenchmark"
 }
